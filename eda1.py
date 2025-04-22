@@ -6,15 +6,15 @@ import seaborn as sns
 df = pd.read_csv('fifa_eda.csv')[:200]
 
 #EDA
-df.head()
+print(df.head())
 
-df.info()
+print(df.info())
 
-df.shape
+print(df.shape)
 
-df.describe()
+print(df.describe())
 
-df.isna().sum
+print(df.isna().sum)
 
 #correlation
 correlation = df[['Age','Wage','Value','International Reputation']].corr()
